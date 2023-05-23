@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+body{
+    background-color: black;
+}
+
+.H {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(186, 186, 186);
+    margin-bottom: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav i{
+    color: grey;
+    transition: 0.6s ease;
+    margin-top: 10px;
+}
+
+nav i:hover{
+    color: white;
+}
+
+.container {
+    margin-top: 6%;
+}
+
+.hero{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .card { 
+    background: #2b2b2b;
+    margin: 5px;
+    margin-bottom: 50px;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: rgb(174, 174, 174);
+    position: relative;
+    font-style: oblique;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+  
+.H {
+    overflow: hidden;
+    white-space: pre;
+    animation: typing 1s;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+  
+.card {
+   animation: slideIn 1s;
+   border-radius: 9px
+}
+   
